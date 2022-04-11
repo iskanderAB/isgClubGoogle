@@ -7,6 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="index.js"></script>>
+    <h1 class="H1elemnt"> hello  </h1>
+    <button id="myElement" > click me ! </button>
+    <input type="text" id="myInput">
+    <p id="textFromInput"></p>
+
+    <script>
+        // const changeColor = () => { 
+        //     const firstElement = document.querySelector(".H1elemnt");
+        //     firstElement.style.color = 'red';
+        //     firstElement.style.marginLeft="200px";
+        // }
+
+        // const btn = document.getElementById('myElement');
+        // btn.addEventListener('click',changeColor);
+        
+        const myInput = document.querySelector("#myInput");
+        
+        const Ptext = document.querySelector("#textFromInput");
+
+        myInput.addEventListener('change',(event)=>{
+            console.log(event.target.value);
+        })
+
+
+
+
+    
+    </script>
 </body>
 </html>
